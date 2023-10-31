@@ -1,0 +1,38 @@
+<html><body>
+    <center><b>Book details</b><br>
+        <script>
+            function saveData()
+	{
+		i=document.forms[0].bikeName.value;
+		t=document.forms[0].year.value;
+		console.log(i);
+		console.log(t);
+		sessionStorage.bikeName=i;
+		sessionStorage.year=t;	
+	}
+	function getData()
+	{
+		para=document.getElementsByName("data");
+		para[0].innerHTML = sessionStorage.bikeName;
+		para[1].innerHTML = sessionStorage.year;
+	}
+
+           
+
+           
+            const b1=new Bike();
+            b1.setName("Royal Enfeild");
+            b1.setYear("2020");
+            document.getElementById("demo").innerHTML=b1.getName()+" "+b1.getYear();
+            </script>
+    <form>	
+    Bike name<input type="text" name="bikeName" /><br><br>
+    Year<input type="text" name="year"/><br><br>
+    <input type="button" value="save" onclick="saveData()"/><br><br>
+    <input type="button" value="Get" onclick="getData()"/><br><br>
+    <input type="reset" value="Reset"/><br><br>
+    </form>
+    
+    </body>
+    </html>
+    

@@ -1,0 +1,23 @@
+.theme1{
+    color:rgba(7, 107, 207, 0.647);
+    background-color:rgb(175, 223, 65);
+    font-size: 25px;
+
+}
+.theme2{
+    color:rgb(255, 200, 0);
+    background-color:color-mix(200, 189, 166);
+    font-size: 35px;
+}
+.theme3{
+    color:rgb(30, 0, 255);
+    background-color:rgb(240, 255, 242);
+    font-size: 50px;
+    border-style:dotted ;
+}
+.theme4{
+    color:rgb(255, 0, 157);
+    background-color:rgb(112, 18, 76);
+    font-size: 45px;
+    border-style:dotted ;
+}

@@ -1,0 +1,22 @@
+form {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .error {
+      color: rgba(255, 0, 0, 0.263);
+      font-size: 12px;
+    }

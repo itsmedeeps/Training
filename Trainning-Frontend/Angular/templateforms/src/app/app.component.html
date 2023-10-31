@@ -1,0 +1,32 @@
+<!-- A template driven will be controlled by a built in directive called ngform
+ How to use ng form??
+ <form ngform=projdata...> ....</form>
+
+
+ form collects the data in form of json so it is converted  into json
+-->
+<form #projectData="ngForm" (ngSubmit)="processData(projectData)">
+Your ProjectId<input type="number" name="projectID" ngModel/><br><br>
+Project Name<input type="text" name="projectName" ngModel/><br><br>
+Project start date<input type="date" name="startDate" ngModel/><br><br>
+Project end date<input type="date" name="endDate" ngModel/><br><br>
+Project cost<input type="number" name="cost" ngModel/><br><br>
+<input type="submit" value="Save" /><br><br>
+</form>
+<b>Employee details</b><br>
+<table style="  border :5px ;border-color:rgb(4, 121, 153); border-style:groove">
+<tr><th> project id</th>
+  <th>start date</th>
+  <th>end Date </th>
+  <th>cost</th>
+</tr>
+<tr *ngFor="let p of projects_list">
+  <td>{{p.projectID}}</td>
+  <td>{{p.startDate }}</td>
+  <td>{{p.endDate}} </td>
+  <td>{{p.cost}} </td>
+
+
+</tr>
+</table>
+<router-outlet></router-outlet>

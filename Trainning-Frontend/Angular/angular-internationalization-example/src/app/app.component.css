@@ -1,0 +1,33 @@
+section {
+
+    background: #8e2de2; /* fallback for old browsers */
+  
+    background: -webkit-linear-gradient(to right, #9874e1, #2c054e); /* Chrome 10-25, Safari 5.1-6 */
+  
+    background: linear-gradient(to right, #74d99b, #5487c1);
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    height: 100vh;
+  
+  }
+  
+   
+  
+  article {
+  
+    border: 1px solid rgb(40, 13, 13);
+  
+    box-shadow: 1px 1px 100px 10px rgba(0, 0, 0, 0.8);
+  
+    color: rgb(64, 17, 17);
+  
+    padding: 40px;
+  
+    text-align: center;
+  
+  }

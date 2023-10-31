@@ -1,0 +1,47 @@
+<html>
+    <body>
+        
+        <p id="demo"></p>
+        <script>
+            class Bike{
+                name="RE";
+                year="2010";
+                //change the value of variables
+                setName(bikeName){
+                    this.name=bikeName;
+                }
+                setYear(mfgYear){
+                    this.year = mfgYear;
+                }
+                getYear(){
+                    return this.year;    //arrow function 
+                }
+                getName(){
+                    return this.name;
+                }
+                
+
+            }
+            const b1=new Bike();
+            function setValues(){
+                bikename=document.getElementById("bikename").value;
+                mfgyear=document.getElementById("mgfyear").value;
+                b1.setName(bikeName);
+                b1.setYear(mfgYear)
+                alert("data saved sucessfully");
+            }
+            function getValues(){
+                documents.getElementById("demo").innerHTML=b1.getName()+" "+b1.getYear();
+            }
+            b1.setName("Royal Enfeild");
+            b1.setYear("2020");
+            document.getElementById("demo").innerHTML=b1.getName()+" "+b1.getYear();
+            </script>
+            <form>
+                Bike name<input type="text" name="bikeName" /><br><br>
+    Year<input type="text" name="year"/><br><br>
+    <input type="button" value="save" onclick="saveValues()"/><br><br>
+    <input type="button" value="Get" onclick="getValues()"/><br><br>
+    <input type="reset" value="Reset"/><br><br>
+            </form>
+    </body></html>

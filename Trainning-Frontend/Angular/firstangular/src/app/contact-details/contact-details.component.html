@@ -1,0 +1,50 @@
+<p>contact-details works!</p><br>
+
+<b>Enter your contact details </b><br>
+
+<b>Contact details</b><br>
+
+<b>Name:</b>{{firstName}} &nbsp;&nbsp; {{lastName}}<br>
+
+<b>Age: </b>{{age}}<br>
+
+<b>Email: </b>{{email}}<br>
+
+<b>Join Status</b> &nbsp; <input type="checkbox" [checked]="joinStatus"  /><br><br>
+
+<button [disabled]="joinStatus" [class]="styleclassname">Confirm</button><br>
+
+<!--One way binding . Model to View .If model changes view also changes-->
+
+<b>Choose your location:</b><br>
+
+<!--One way binding . Model to View .If model changes view also changes-->
+
+<select size="1" [value]="location">
+
+    <option value="Bangalore">Bangalore</option>
+
+    <option value="Hyderabad">Hyderabad</option>
+
+    <option value="Chennai">Chennai</option>
+
+    <option value="Gujarat">Gujarat</option>
+
+</select><br><br>
+
+<!--css class binding.one way binding-->
+
+<div class="divstyle">
+
+    style attached using class binding..
+
+</div>
+
+<b>first name</b><input type="text" [(ngModel)]="firstName"/><br>
+<b>last Name</b>&nbsp;<input type="text" [(ngModel)] = "lastName"/>
+<b>Age</b><input type="number" [(ngModel)]="age"/><br>
+<input type="range" [(ngModel)]="age" width="250"/>
+
+<!--interrpolation one way model tp view binding-->
+<b>welcome mr/ms</b>{{firstName}} &nbsp;&nbsp;{{lastName}}
+<br><br><br>

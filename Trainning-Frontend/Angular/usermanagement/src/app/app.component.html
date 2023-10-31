@@ -1,0 +1,31 @@
+<html><body>
+
+ 
+
+    <b>Please Sign in to proceed Further</b><br>
+    
+    <form (Submit)="addAUser()">
+    
+    <legend>
+    
+    User ID<input type="text" name="userID" [(ngModel)]="user.userID" placeholder="Enter your user id" /> <br>
+    
+    Password<input type="password" name="password" [(ngModel)]="user.password" placeholder="Enter your password" /> <br>
+    
+    Email ID<input type="email" name="emailID" [(ngModel)]="user.emailID" /> <br>
+    
+    </legend>
+    
+        <legend>
+    
+            <input type="submit" value="Add user"/>&nbsp;&nbsp;
+    
+            <input type="reset" value="Reset" />
+    
+        </legend>
+    
+    </form>
+    
+     
+    
+    </body></html><router-outlet></router-outlet>

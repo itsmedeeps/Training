@@ -1,0 +1,9 @@
+.bstyle{
+    color:blueviolet;
+    height: 90px;
+    width: 150;
+}
+.divstyle{
+    border-style: ridge ;
+    border-color: aquamarine;
+}
